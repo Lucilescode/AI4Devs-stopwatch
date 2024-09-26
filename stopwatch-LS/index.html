@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stopwatch & Countdown</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Stopwatch & Countdown</h1>
+			<div class="timers">
+				<!-- Stopwatch Section -->
+				<div id="stopwatch-screen" class="timer-screen">
+					<div class="timer-container">
+						<h2>Stopwatch</h2>
+						<div id="stopwatch-display" class="timer">00:00:00</div>
+						<div class="control-buttons">
+							<button id="stopwatch-start" class="control-btn start">
+								Start
+							</button>
+							<button id="stopwatch-clear" class="control-btn clear">
+								Clear
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Countdown Section -->
+				<div id="countdown-screen" class="timer-screen">
+					<div class="timer-container">
+						<h2>Countdown</h2>
+						<div class="countdown-input-container">
+							<input
+								type="text"
+								id="countdown-input"
+								class="timer"
+								placeholder="00:00:00"
+								maxlength="8"
+								readonly
+							/>
+							<div class="arrows">
+								<button class="arrow-btn" id="up-arrow">▲</button>
+								<button class="arrow-btn" id="down-arrow">▼</button>
+							</div>
+						</div>
+						<div id="keypad" class="keypad">
+							<!-- Image keyboard for entering values -->
+							<button class="keypad-btn">1</button>
+							<button class="keypad-btn">2</button>
+							<button class="keypad-btn">3</button>
+							<button class="keypad-btn">4</button>
+							<button class="keypad-btn">5</button>
+							<button class="keypad-btn">6</button>
+							<button class="keypad-btn">7</button>
+							<button class="keypad-btn">8</button>
+							<button class="keypad-btn">9</button>
+							<button class="keypad-btn">0</button>
+							<button class="keypad-btn" id="clear-keypad">Clear</button>
+						</div>
+						<div class="control-buttons">
+							<button id="countdown-start" class="control-btn start">
+								Start
+							</button>
+							<button id="countdown-clear" class="control-btn clear">
+								Clear
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts.js"></script>
+	</body>
+</html>
