@@ -1,0 +1,182 @@
+/* General Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 2.5rem;
+	color: #333;
+}
+
+h2 {
+	margin-bottom: 15px;
+	font-size: 1.8rem;
+	color: #555;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timers {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.timer-screen {
+	flex: 1;
+	margin: 0 20px;
+	padding: 20px;
+	background-color: #fafafa;
+	border-radius: 10px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.timer {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	border: none;
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	color: #333;
+}
+
+input.timer {
+	cursor: not-allowed;
+}
+
+.control-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.control-btn {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.start {
+	background-color: #28a745;
+	color: white;
+}
+
+.clear {
+	background-color: #dc3545;
+	color: white;
+}
+
+.start:hover {
+	background-color: #218838;
+}
+
+.clear:hover {
+	background-color: #c82333;
+}
+
+.pause {
+	background-color: #ffc107;
+	color: white;
+}
+
+.pause:hover {
+	background-color: #e0a800;
+}
+
+.keypad {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.keypad-btn {
+	padding: 15px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+.keypad-btn:hover {
+	background-color: #0056b3;
+}
+
+.keypad-btn#clear-keypad {
+	grid-column: span 3;
+	background-color: #dc3545;
+}
+
+.keypad-btn#clear-keypad:hover {
+	background-color: #c82333;
+}
+
+/* Arrow buttons for adjusting countdown time */
+.arrows {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	margin-left: 15px;
+}
+
+.arrow-btn {
+	background-color: #007bff;
+	border: none;
+	color: white;
+	font-size: 1.2rem;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.arrow-btn:hover {
+	background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.timers {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.timer-screen {
+		margin: 20px 0;
+		width: 100%;
+	}
+
+	.container {
+		width: 90%;
+		padding: 10px;
+	}
+}
